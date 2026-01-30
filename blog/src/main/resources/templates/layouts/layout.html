@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Blog Home - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<!-- 메뉴바 / menubar-->
+<nav th:replace="~{fragments/menubar::menubar}"></nav>
+
+<!-- 메뉴바 끝 -->
+<!-- 헤더 / headbar-->
+<header th:replace="~{fragments/headbar::headerbar}"></header>
+
+<!-- 헤더 끝 -->
+<!-- 본문 내용 / content-->
+<div layout:fragment="content"></div>
+
+<!-- 본문 내용 끝 -->
+<!-- 하단바 / footbar -->
+<footer th:replace="~{fragments/footbar::footerbar}"></footer>
+
+<!-- 하단바 끝 -->
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="./js/scripts.js"></script>
+</body>
+</html>
